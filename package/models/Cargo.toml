@@ -1,0 +1,10 @@
+[package]
+name = "models"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+edition.workspace = true
+
+[dependencies]
+chrono.workspace = true
+serde = { workspace = true, features = ["derive"] }
