@@ -10,7 +10,7 @@ import {
 } from "./constants";
 import path from "path";
 
-test.describe.serial("Survey", () => {
+test.describe("Survey", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("https://voice-korea.dev.biyard.co/");
     await page.waitForTimeout(latency);
@@ -35,7 +35,7 @@ test.describe.serial("Survey", () => {
         'xpath=//*[@id="main"]/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/div/div'
       )
       .click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState();
     await page.screenshot({
       path: screenshot_path(
         "account",
@@ -94,7 +94,7 @@ test.describe.serial("Survey", () => {
         'xpath=//*[@id="main"]/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/div/div'
       )
       .click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState();
     await page.screenshot({
       path: screenshot_path(
         "account",
@@ -182,7 +182,7 @@ test.describe.serial("Survey", () => {
         'xpath=//*[@id="main"]/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/div/div'
       )
       .click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState();
     await page.screenshot({
       path: screenshot_path(
         "account",

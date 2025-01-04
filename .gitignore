@@ -85,3 +85,4 @@ node_modules/
 .vscode/
 playwright/.auth/user.json
 /screenshots/
+auth.json
